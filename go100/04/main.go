@@ -31,10 +31,10 @@ func divide(a, b int) (int, error) {
 
 //divide2 does exactly the same thing than divide but returned values are named here.
 func divide2(a, b int) (result int, err error) {
-	if b == 0 {
-		err = errors.New("cannot divide by zero")
-		return
-	}
+	// if b == 0 {
+	// 	err = errors.New("cannot divide by zero")
+	// 	return
+	// }
 	result = a / b
 	return
 }
@@ -53,4 +53,8 @@ func main() {
 
 	result, err = divide(5, 0)
 	fmt.Printf("divide(5, 0) = %d, Error = %v\n", result, err)
+
+	// this will cause an exception
+	result, err = divide2(5, 0)
+	fmt.Printf("divide2(5, 0) = %d, Error = %v\n", result, err)
 }

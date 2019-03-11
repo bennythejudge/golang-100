@@ -11,5 +11,6 @@ var jeSuisInvisibleEnDehorsDuPackage int
 var JeSuisVisibleEnDehorsDuPackage int
 
 func main() {
-	fmt.Println(math.pi) //cannot refer to unexported name math.pi
+	// fmt.Println(math.pi) // this will fail cannot refer to unexported name math.pi
+	fmt.Println(math.Pi) // 
 }
