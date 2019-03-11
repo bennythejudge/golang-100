@@ -13,6 +13,11 @@ func uneFonction() {
 	z := false         // déclaration courte : à l'intérieur d'une fonction on peut utiliser := au lieu de var et le type est inféré par la valeur initiale
 
 	fmt.Printf("w = %v and its type is %[1]T\n", w)
+
+	// the following is the equivalent of the previous
+	fmt.Printf("w = %v and its type is %T\n", w, w)
+
+
 	fmt.Printf("x = %v and its type is %[1]T\n", x)
 	fmt.Printf("y = %v and its type is %[1]T\n", y)
 	fmt.Printf("z = %v and its type is %[1]T\n", z)

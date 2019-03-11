@@ -41,6 +41,10 @@ func divide2(a, b int) (result int, err error) {
 
 //main function
 func main() {
+
+	// this would cause a compilation error
+	// var pippo string = 0
+
 	printNumbers(1, 2, "Did you know?")
 
 	fmt.Printf("diff(5, 3) = %d\n", diff(5, 3))
@@ -55,6 +59,7 @@ func main() {
 	fmt.Printf("divide(5, 0) = %d, Error = %v\n", result, err)
 
 	// this will cause an exception
+	fmt.Println("I am about to cause an exception")
 	result, err = divide2(5, 0)
 	fmt.Printf("divide2(5, 0) = %d, Error = %v\n", result, err)
 }
